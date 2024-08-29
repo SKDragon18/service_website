@@ -1,0 +1,149 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 0,
+ "allow_delete": 1,
+ "allow_edit": 1,
+ "allow_incomplete": 0,
+ "allow_multiple": 1,
+ "allow_print": 1,
+ "amount": 0.0,
+ "amount_based_on_field": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 0,
+ "button_label": "Save",
+ "condition_json": "[]",
+ "creation": "2024-08-28 16:28:21.465692",
+ "currency": "VND",
+ "doc_type": "Service Registration",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User"
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Service Name"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "label": "Group"
+  },
+  {
+   "fieldname": "registration_fee",
+   "fieldtype": "Currency",
+   "label": "Registration Fee"
+  }
+ ],
+ "list_title": "Registration",
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2024-08-29 16:28:45.193490",
+ "modified_by": "Administrator",
+ "module": "Service Website",
+ "name": "registration",
+ "owner": "Administrator",
+ "payment_button_label": "Buy Now",
+ "print_format": "Credit Note",
+ "published": 1,
+ "route": "registration",
+ "show_attachments": 1,
+ "show_list": 1,
+ "show_sidebar": 0,
+ "success_message": "Submit Successfully",
+ "success_title": "Success",
+ "title": "Registration",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "User",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "User",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Service",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Service",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Service Name",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Group",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 1,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "registration_fee",
+   "fieldtype": "Currency",
+   "hidden": 0,
+   "label": "Registration Fee",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "hidden": 0,
+   "label": "Description",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ]
+}

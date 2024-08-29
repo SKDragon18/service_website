@@ -1,0 +1,83 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 1,
+ "allow_delete": 1,
+ "allow_edit": 1,
+ "allow_incomplete": 0,
+ "allow_multiple": 1,
+ "allow_print": 1,
+ "amount": 0.0,
+ "amount_based_on_field": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 0,
+ "button_label": "Save",
+ "client_script": "frappe.ready(function() {\n    frappe.web_form.refresh = function() {\n        let current_user = frappe.session.user;\n        frappe.web_form.set_value('creator', current_user);\n    };\n    frappe.web_form.onload = function() {\n        let current_user = frappe.session.user;\n        frappe.web_form.set_value('creator', current_user);\n    };\n});",
+ "condition_json": "[]",
+ "creation": "2024-08-28 11:23:21.443618",
+ "currency": "VND",
+ "custom_css": "",
+ "doc_type": "Service Group",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "label": "Group name"
+  },
+  {
+   "fieldname": "creator",
+   "fieldtype": "Link",
+   "label": "Creator"
+  }
+ ],
+ "list_title": "Service Group",
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2024-08-28 11:50:42.159289",
+ "modified_by": "Administrator",
+ "module": "Service Website",
+ "name": "service-group",
+ "owner": "Administrator",
+ "payment_button_label": "Buy Now",
+ "published": 1,
+ "route": "service-group",
+ "show_attachments": 0,
+ "show_list": 1,
+ "show_sidebar": 0,
+ "success_message": "Save successfully",
+ "success_title": "Success",
+ "success_url": "home",
+ "title": "Service Group",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Group name",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "creator",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Creator",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "User",
+   "precision": "",
+   "read_only": 1,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ]
+}

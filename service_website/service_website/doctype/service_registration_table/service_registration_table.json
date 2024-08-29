@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-27 11:53:13.146295",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_registration",
+  "section_break_zyim",
+  "service",
+  "user",
+  "section_break_xspm",
+  "username",
+  "service_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_registration",
+   "fieldtype": "Link",
+   "label": "Service Registration",
+   "options": "Service Registration"
+  },
+  {
+   "fieldname": "section_break_zyim",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "service_registration.service",
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Service"
+  },
+  {
+   "fetch_from": "service_registration.user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_xspm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "user.username",
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fetch_from": "service.service_name",
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Service Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-27 11:58:13.379021",
+ "modified_by": "Administrator",
+ "module": "Service Website",
+ "name": "Service Registration Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
