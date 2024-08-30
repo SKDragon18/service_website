@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ACRT-{DD}-{MM}-{YYYY}-{#####}",
+ "creation": "2024-08-30 15:23:38.035419",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "additional_cost",
+  "section_break_hydl",
+  "cost",
+  "number"
+ ],
+ "fields": [
+  {
+   "fieldname": "additional_cost",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Additional Cost",
+   "options": "Additional Cost"
+  },
+  {
+   "fieldname": "section_break_hydl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "additional_cost.cost",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Cost"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-30 15:43:55.232104",
+ "modified_by": "Administrator",
+ "module": "Service Website",
+ "name": "Additional Cost Registration Table",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

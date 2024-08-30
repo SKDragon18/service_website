@@ -9,7 +9,8 @@ def service(property_type=None):
             Service.service_name,
             Service.image,
             Service.owner,
-            Service.price
+            Service.price,
+            Service.route
         )
         .orderby(Service.service_name)
     )

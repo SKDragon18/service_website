@@ -1,9 +1,14 @@
 import frappe
-
-def notify_on_save(doc, method):
-    # Ví dụ: Gửi một thông báo realtime khi document được lưu
-    frappe.publish_realtime(
-        event='document_saved',  # tên sự kiện
-        message={'doctype': doc.doctype, 'name': doc.name},  # dữ liệu gửi kèm
-        user=frappe.session.user  # chỉ gửi cho người dùng hiện tại
-    )
+def service_saved(doc, method):
+    frappe.msgprint('Service_update')
+    data = {
+        "name": doc.name
+    }
+    
+    frappe.publish_realtime('service_update', message=data)
+# import requests
+# parent_path = 'http://mysite.localhost:8000/api/method/'
+# def notify_on_save(doc, method):
+#     # url = parent_path+"service_website.api.service"
+#     # response = requests.get(url, headers={"Authorization": "token your-api-key"})
+#     frappe.publish_realtime('event_name', message={'data': 'response'})

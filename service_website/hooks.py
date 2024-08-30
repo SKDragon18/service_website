@@ -141,7 +141,7 @@ override_whitelisted_methods = {
 # }
 doc_events = {
     "*": {
-        "after_save": "service_website.notify_on_save"
+        "on_update": "service_website.realtime.service_saved"
     }
 }
 # Scheduled Tasks

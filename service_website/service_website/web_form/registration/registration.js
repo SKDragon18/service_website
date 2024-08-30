@@ -18,8 +18,13 @@ const handle = (data)=>{
 	})
 }
 frappe.ready(function() {
-
+	let params = new URLSearchParams(window.location.search);
+	let serviceName = params.get('service_name');
+	if(serviceName){
+		frappe.web_form.set_value('service', serviceName)
+	}
 	
+	console.log(serviceName)
 	frappe.call({
 		method:'frappe.client.get',
 		args:{

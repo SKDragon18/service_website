@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ACS-{DD}-{MM}-{YYYY}-{#####}",
+ "creation": "2024-08-30 15:01:30.026625",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_additional",
+  "section_break_fhrd",
+  "cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "cost_additional",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cost Additional",
+   "options": "Additional Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fhrd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "cost_additional.cost",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-30 15:14:44.065083",
+ "modified_by": "Administrator",
+ "module": "Service Website",
+ "name": "Additional Cost Service Table",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
